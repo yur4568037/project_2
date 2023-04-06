@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678375591" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/test.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1678974976" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/test.dcp">
   <File Type="PA-TCL" Name="test.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="test_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="test_reports.tcl"/>
@@ -34,6 +34,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

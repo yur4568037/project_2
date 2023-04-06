@@ -83,27 +83,10 @@ module test(
         lim_state[0] = 0;
         lim_state[1] = 0;
         lim_state[2] = 0;
-        
-        /*
-        rgb_val[0] = 1;
-        rgb_val[1] = 1;
-        rgb_val[2] = 1;
-        */
     end
     
     // change led state
-    always @ (posedge clk)
-    /*
-    begin
-        if(sw[0])   rgb_val[0] <= 1;
-        else        rgb_val[0] <= 0;
-        
-        for(i=1; i<3; i=i+1)
-            if(sw[i])   rgb_val[i] <= 1;
-            else        rgb_val[i] <= 0;    
-    end
-    */
-    
+    always @ (posedge clk)    
     for(i=0; i<3; i=i+1)
     begin
         rgb_counter[i] <= rgb_counter[i] + 1;
@@ -166,5 +149,6 @@ module test(
             end
         end // if(lim_counter <= 2500) // 40 kHz
     end // always @ (posedge clk)
-        
-endmodule
+    
+endmodule   // module test(
+
